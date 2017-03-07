@@ -3,7 +3,11 @@ QT       = core network
 CONFIG  += c++11
 TARGET   = qmhd
 
-LIBS    += -lmicrohttpd
+include(../conanbuildinfo.pri)
+CONFIG += conan_basic_setup
+
+INCLUDEPATH += $$CONAN_INCLUDEPATH
+LIBS += $$CONAN_LIBS
 
 HEADERS += \
     qmhdbody.h \
