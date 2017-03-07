@@ -3,7 +3,7 @@ QT       = core network
 CONFIG  += c++11
 TARGET   = qmhd
 
-include(../conanbuildinfo.pri)
+include(../../conanbuildinfo.pri)
 CONFIG += conan_basic_setup
 
 INCLUDEPATH += $$CONAN_INCLUDEPATH

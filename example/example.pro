@@ -6,7 +6,7 @@ TARGET   = example
 INCLUDEPATH += $$PWD/../src
 LIBS        += -L$$OUT_PWD/../src -lqmhd
 
-include(../conanbuildinfo.pri)
+include(../../conanbuildinfo.pri)
 CONFIG += conan_basic_setup
 
 INCLUDEPATH += $$CONAN_INCLUDEPATH
